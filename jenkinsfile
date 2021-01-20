@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Requirement') {
+            steps {
+                echo 'This is Requirement phase'
+            }
+        }
+        stage('Analysis') {
+            steps {
+                echo 'This is analysis stage'
+            }
+        }
+        stage('Developing') {
+            steps {
+                echo 'This is developing stage'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'This is testing statge'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'Release'
+            }
+        }
+    }
+}
